@@ -12,9 +12,11 @@
             $id = $_GET['id'];
             // Buatlah query untuk mengambil masing-masing data berdasarkan id dari database (gunakan fungsi GET dan mysqli_fetch_assoc() 
             // serta query SELECT dan WHERE)
-            
-
-
+            $query = mysqli_query($koneksi, "SELECT * FROM showroom_mobil WHERE id= '$id'");
+            if ($query){
+                while($selects= mysqli_fetch_assoc($query)){
+                }
+            }   
 
             //
         ?>
